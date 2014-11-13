@@ -19,16 +19,19 @@
 		var banner = document.querySelector('section.banner');
 		var height = parseInt(window.getComputedStyle(banner, null).getPropertyValue("height"));
 
+
 		window.onscroll = function (event)
 		{
 			if (window.scrollY > height)
 			{
 				header.style.position = "fixed";
+				banner.style.marginBottom = "70px";
 			}
 
 			else
 			{
 				header.style.position = "";
+				banner.style.marginBottom = "";
 			}
 		}
 
